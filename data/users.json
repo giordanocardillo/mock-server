@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Ninon",
+      "last_name": "McGerraghty",
+      "email": "nmcgerraghty0@plala.or.jp",
+      "gender": "Female",
+      "ip_address": "153.132.47.99"
+    },
+    {
+      "id": 2,
+      "first_name": "Elsy",
+      "last_name": "Faussett",
+      "email": "efaussett1@apache.org",
+      "gender": "Female",
+      "ip_address": "63.205.242.232"
+    },
+    {
+      "id": 3,
+      "first_name": "Hilliary",
+      "last_name": "Algeo",
+      "email": "halgeo2@techcrunch.com",
+      "gender": "Female",
+      "ip_address": "217.213.186.222"
+    },
+    {
+      "id": 4,
+      "first_name": "Brock",
+      "last_name": "Jeffels",
+      "email": "bjeffels3@columbia.edu",
+      "gender": "Male",
+      "ip_address": "168.114.230.9"
+    },
+    {
+      "id": 5,
+      "first_name": "Latia",
+      "last_name": "Dullard",
+      "email": "ldullard4@un.org",
+      "gender": "Female",
+      "ip_address": "235.236.68.250"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "mockserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "json-server": "^0.14.2",
+    "nodemon": "^1.18.10"
+  }
+}
