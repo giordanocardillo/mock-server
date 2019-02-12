@@ -15,21 +15,21 @@ files.forEach(file => {
   server.use(`/${fileName}`, require(`${__dirname}/api/${fileName}`))
 })
 
-server.use((req, res, next) => {
-  if (res.locals.data) {
-    return res.jsonp({
-      success: true,
-      data: res.locals.data,
-    })
-  }
-  next()
-})
-
 server.use((err, req, res, next) => {
   if (err) {
     return res.status(err.status || 500).jsonp({
       success: false,
       error: err.message,
+    })
+  }
+  next()
+})
+
+server.use((req, res, next) => {
+  if (res.locals.data) {
+    return res.jsonp({
+      success: true,
+      data: res.locals.data,
     })
   }
   next()
