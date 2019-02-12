@@ -25,9 +25,18 @@ server.use((req, res, next) => {
   next()
 })
 
+server.use((err, req, res, next) => {
+  if (err) {
+    return res.status(err.status || 500).jsonp({
+      success: false,
+      error: err.message,
+    })
+  }
+  next()
+})
+
 server.use('*', (req, res, next) => {
-  res.statusCode = 404
-  res.jsonp({
+  res.status(404).jsonp({
     success: false,
     data: 'Not found',
   })
